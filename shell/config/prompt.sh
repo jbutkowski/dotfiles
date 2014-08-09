@@ -1,3 +1,7 @@
+# locale stuff
+export LANG=en_AU.UTF-8
+export LC_CTYPE=en_US.UTF-8
+
 function __git_in_repo() { __gitdir > /dev/null; }
 function __git_is_dirty() { git status --porcelain | grep -q .; }
 function __git_dirty() { __git_in_repo && __git_is_dirty && echo "$1"; }
