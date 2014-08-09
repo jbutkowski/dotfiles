@@ -44,6 +44,9 @@ set foldlevelstart=99                       " Expand all folds by default
 
 let g:is_posix = 1                          " Better highlighting of shell files
 
+" Power line stuff
+let g:Powerline_symbols = 'fancy'
+
 " Colorscheme
 set t_Co=256
 syntax enable

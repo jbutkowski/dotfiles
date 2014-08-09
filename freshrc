@@ -40,6 +40,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh jasoncodes/dotfiles vim/config/auto_mkdir.vim
 fresh-options
 fresh vim/colors --file=~/.vim/colors/
+fresh foobacca/dotfiles tmux/statusbar --file=~/tmux.conf
 
 # Fonts
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf
