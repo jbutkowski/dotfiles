@@ -12,12 +12,6 @@ fresh-options --file=~/.bash_logout
 fresh-options
 
 fresh 'bin/*' --bin
-
-# Shell
-fresh shell/noninteractive.sh
-fresh 'shell/aliases/*'
-fresh 'shell/config/*'
-
 # Config
 fresh-options --file
   fresh 'config/*'
@@ -45,6 +39,16 @@ fresh foobacca/dotfiles tmux/statusbar --file=~/tmux.conf
 # Fonts
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf
 fresh Lokaltog/powerline font/10-powerline-symbols.conf --file=~/.config/fontconfig/conf.d/10-powerline-symbols.conf
+
+# Shell
+fresh shell/noninteractive.sh
+fresh 'shell/aliases/*'
+fresh 'shell/config/*'
+fresh jasoncodes/dotfiles shell/editor.sh
+fresh jasoncodes/dotfiles shell/config/filters.sh
+fresh jasoncodes/dotfiles shell/config/pager.sh
+fresh jasoncodes/dotfiles shell/functions/realpath.sh
+fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 # Other config
 fresh bltavares/dot-files ctags --file=~/.ctags
