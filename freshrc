@@ -51,6 +51,12 @@ fresh bltavares/dot-files ctags --file=~/.ctags
 fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
 fresh config/other/mplayer --file=~/.mplayer/config
 
+init_vim() {
+  if which vim &> /dev/null && ! [ -d $HOME/.vim/bundle/vundle ]; then
+    vim || [ -d $HOME/.vim/bundle/vundle ]
+  fi
+}
+
 if [ ! -e ~/.gitconfig.local ]; then
     echo "Configuring local Git settings:"
     read -p "    Enter Git Name: " username
@@ -59,3 +65,8 @@ if [ ! -e ~/.gitconfig.local ]; then
     git config -f ~/.gitconfig.local user.email $email
     echo "Configured git settings in ~/.gitconfig.local. Not stored in local .dotfiles repo."
 fi
+
+fresh_after_build() {
+  init_vim
+}
+
