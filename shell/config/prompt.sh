@@ -189,17 +189,17 @@ function get_git_status() {
 
   # Iterate through all the cases and if it matches, then echo
   if [[ "$dirty_branch" == 1 && "$branch_ahead" == 1 && "$branch_behind" == 1 ]]; then
-    echo "â¢"
+    echo "⬢"
   elif [[ "$dirty_branch" == 1 && "$branch_ahead" == 1 ]]; then
-    echo "â²"
+    echo "▲"
   elif [[ "$dirty_branch" == 1 && "$branch_behind" == 1 ]]; then
-    echo "â¼"
+    echo "▼"
   elif [[ "$branch_ahead" == 1 && "$branch_behind" == 1 ]]; then
-    echo "â¡"
+    echo "⬡"
   elif [[ "$branch_ahead" == 1 ]]; then
-    echo "â³"
+    echo "△"
   elif [[ "$branch_behind" == 1 ]]; then
-    echo "â½"
+    echo "▽"
   elif [[ "$dirty_branch" == 1 ]]; then
     echo "*"
   fi
@@ -244,4 +244,3 @@ PS1="\[$prompt_user_color\]\u\[$prompt_reset\] \
   echo -n \"\[$prompt_git_progress_color\]\$(get_git_progress)\" && \
   echo -n \"\[$prompt_preposition_color\]\")\n\[$prompt_reset\]\
 \[$prompt_symbol_color\]$(get_prompt_symbol) \[$prompt_reset\]"
-
