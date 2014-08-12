@@ -11,7 +11,18 @@ fresh-options --file=~/.bash_logout
   fresh shell/logout/*
 fresh-options
 
+# Shell
+fresh shell/noninteractive.sh
+fresh 'shell/aliases/*'
+fresh 'shell/config/*'
+fresh jasoncodes/dotfiles shell/editor.sh
+fresh jasoncodes/dotfiles shell/config/filters.sh
+fresh jasoncodes/dotfiles shell/config/pager.sh
+fresh jasoncodes/dotfiles shell/functions/realpath.sh
+fresh markryall/dotfiles shell/aliases/dvcs.sh
+
 fresh 'bin/*' --bin
+
 # Config
 fresh-options --file
   fresh 'config/*'
@@ -40,16 +51,6 @@ fresh foobacca/dotfiles tmux/statusbar --file=~/tmux.conf
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf
 fresh Lokaltog/powerline font/10-powerline-symbols.conf --file=~/.config/fontconfig/conf.d/10-powerline-symbols.conf
 
-# Shell
-fresh shell/noninteractive.sh
-fresh 'shell/aliases/*'
-fresh 'shell/config/*'
-fresh jasoncodes/dotfiles shell/editor.sh
-fresh jasoncodes/dotfiles shell/config/filters.sh
-fresh jasoncodes/dotfiles shell/config/pager.sh
-fresh jasoncodes/dotfiles shell/functions/realpath.sh
-fresh markryall/dotfiles shell/aliases/dvcs.sh
-
 # Other config
 fresh bltavares/dot-files ctags --file=~/.ctags
 fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
@@ -61,6 +62,13 @@ init_vim() {
   fi
 }
 
+# Gitignore
+fresh-options --file=~/.gitignore --marker=#
+  fresh github/gitignore Global/vim.gitignore
+  fresh github/gitignore Global/OSX.gitignore
+  fresh github/gitignore Global/Tags.gitignore
+fresh-options
+
 if [ ! -e ~/.gitconfig.local ]; then
     echo "Configuring local Git settings:"
     read -p "    Enter Git Name: " username
@@ -69,6 +77,8 @@ if [ ! -e ~/.gitconfig.local ]; then
     git config -f ~/.gitconfig.local user.email $email
     echo "Configured git settings in ~/.gitconfig.local. Not stored in local .dotfiles repo."
 fi
+
+ln -sf ~/.gitignore ~/.agignore
 
 fresh_after_build() {
   init_vim

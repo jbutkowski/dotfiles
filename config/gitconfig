@@ -3,16 +3,17 @@
 [include]
   path = .gitconfig.local
 [alias]
-	st = status
-	di = diff
-	dc = diff --cached
+  st = status
+  di = diff
+  dc = diff --cached
 [color]
-	ui = auto
+  ui = auto
 [push]
-	default = simple
+  default = simple
 [core]
   excludesfile = ~/.gitignore
 [alias]
+  since-master = diff --name-only origin/master
   bubble = merge --no-ff
   fixup = commit --fixup
   st = status
