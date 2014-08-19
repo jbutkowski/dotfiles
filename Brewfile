@@ -26,13 +26,12 @@ install vim --override-system-vii
 
 install homebrew/dupes/grep
 install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries
-install git
+#install git
 install git-flow
-tap caskroom/cask
-install brew-cask
+#tap caskroom/cask
+#install brew-cask
 install imagemagick --with-webp
 install lynx
 install nmap
