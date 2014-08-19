@@ -11,6 +11,8 @@ fresh-options --file=~/.bash_logout
   fresh shell/logout/*
 fresh-options
 
+fresh 'bin/*' --bin
+
 # Shell
 fresh shell/noninteractive.sh
 fresh 'shell/aliases/*'
@@ -20,8 +22,6 @@ fresh jasoncodes/dotfiles shell/config/filters.sh
 fresh jasoncodes/dotfiles shell/config/pager.sh
 fresh jasoncodes/dotfiles shell/functions/realpath.sh
 fresh markryall/dotfiles shell/aliases/dvcs.sh
-
-fresh 'bin/*' --bin
 
 # Config
 fresh-options --file
