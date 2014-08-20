@@ -50,6 +50,7 @@ fresh foobacca/dotfiles tmux/statusbar --file=~/tmux.conf
 # Fonts
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf
 fresh Lokaltog/powerline font/10-powerline-symbols.conf --file=~/.config/fontconfig/conf.d/10-powerline-symbols.conf
+fresh Lokaltog/powerline-fonts 'SourceCodePro/Sauce Code Powerline Regular.otf' --file='~/.fonts/Source Code Powerline Regular.otf'
 
 # Other config
 fresh bltavares/dot-files ctags --file=~/.ctags
