@@ -37,5 +37,7 @@ install lynx
 install nmap
 install node # This installs `npm` too using the recommended installation method
 
+tap gapple/services
+
 # Remove outdated versions from the cellar
 cleanup
