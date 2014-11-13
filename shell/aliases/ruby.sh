@@ -1,7 +1,19 @@
+# Ruby on Rails
+alias sc="[ -f script/console ] && script/console || bundle exec rails console"
+alias sx="[ -f script/console ] && script/console --sandbox || bundle exec rails console --sandbox"
+alias sdb="[ -f script/dbconsole ] && script/console --include-password || bundle exec rails dbconsole --include-password"
+alias ss="[ -f script/server ] && script/server || rails server"
+alias mig="rake db:migrate"
+alias f="script/foreman_turbux"
+
 alias b='bundle check || bundle'
 alias bo='bundle open'
 alias be='bundle exec'
 alias cap='bundle exec cap'
+
+# Tests
+alias rsua="bundle exec rake spec:unit:all"
+alias rsp="rake testbot:spec"
 
 function rake
 {
