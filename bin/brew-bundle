@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+[ -f "Brewfile" ] || (echo "No Brewfile found" 1>&2 && exit -1)
+while read line
+do
+  [ "${line###*}" ] && brew $line
+done < Brewfile
