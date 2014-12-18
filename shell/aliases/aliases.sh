@@ -38,3 +38,5 @@ fi
 # I always forget the common options.
 alias rsync?="echo 'rsync -az --progress server:/path/ path (Slashes are significant.)'"
 
+alias phpmamp='/Applications/MAMP/bin/php/php5.6.2/bin/php'
+

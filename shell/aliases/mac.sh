@@ -50,4 +50,4 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
 # Reload the shell (i.e. invoke as a login shell)
-alias reload="exec $SHELL -l"
+#alias reload="exec $SHELL -l"
