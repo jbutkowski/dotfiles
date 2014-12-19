@@ -17,11 +17,6 @@ fresh 'bin/*' --bin
 fresh shell/noninteractive.sh
 fresh 'shell/aliases/*'
 fresh 'shell/config/*'
-fresh jasoncodes/dotfiles shell/editor.sh
-fresh jasoncodes/dotfiles shell/config/filters.sh
-fresh jasoncodes/dotfiles shell/config/pager.sh
-fresh jasoncodes/dotfiles shell/functions/realpath.sh
-fresh markryall/dotfiles shell/aliases/dvcs.sh
 
 # Config
 fresh-options --file
@@ -31,6 +26,7 @@ fresh-options --file
   fresh garybernhardt/dotfiles .githelpers
 fresh-options
 fresh seebi/dircolors-solarized dircolors.ansi-dark --file=~/.dircolors
+fresh seebi/tmux-colors-solarized tmuxcolors-dark.conf --file=~/.tmux.conf
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
@@ -57,12 +53,6 @@ fresh bltavares/dot-files ctags --file=~/.ctags
 fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
 fresh config/other/mplayer --file=~/.mplayer/config
 
-init_vim() {
-  if which vim &> /dev/null && ! [ -d $HOME/.vim/bundle/vundle ]; then
-    vim || [ -d $HOME/.vim/bundle/vundle ]
-  fi
-}
-
 # Gitignore
 fresh-options --file=~/.gitignore --marker=#
   fresh github/gitignore Global/vim.gitignore
@@ -80,8 +70,3 @@ if [ ! -e ~/.gitconfig.local ]; then
 fi
 
 ln -sf ~/.gitignore ~/.agignore
-
-fresh_after_build() {
-  init_vim
-}
-
