@@ -6,7 +6,7 @@ Bundle 'ConradIrwin/vim-bracketed-paste'
 "--------------------------
 " tpope plugins
 "--------------------------
-Bundle 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-abolish'
 Bundle 'tpope/vim-unimpaired'
