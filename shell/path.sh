@@ -1,11 +1,5 @@
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# The next line updates PATH for the Google Cloud SDK.
-source '~/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '~/google-cloud-sdk/completion.bash.inc'
-
 function prepend_path() {
   if [ -d "$1" ]; then
     PATH="$1:$PATH"
@@ -31,5 +25,11 @@ prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 
 unset prepend_path
 unset append_path
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/jbutkowski/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/jbutkowski/google-cloud-sdk/completion.bash.inc'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
