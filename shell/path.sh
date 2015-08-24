@@ -20,7 +20,7 @@ prepend_path '/usr/local/sbin'
 prepend_path '~/.rvm/bin'
 prepend_path '~/bin'
 append_path  '~/.rvm/bin'
-
+append_path  '~/.node/bin'
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 
 unset prepend_path
