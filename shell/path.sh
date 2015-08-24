@@ -32,4 +32,6 @@ source '/Users/jbutkowski/google-cloud-sdk/path.bash.inc'
 # The next line enables shell command completion for gcloud.
 source '/Users/jbutkowski/google-cloud-sdk/completion.bash.inc'
 
+NPM_PACKAGES="${HOME}/.npm-packages"
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
