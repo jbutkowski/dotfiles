@@ -33,5 +33,6 @@ source '/Users/jbutkowski/google-cloud-sdk/path.bash.inc'
 source '/Users/jbutkowski/google-cloud-sdk/completion.bash.inc'
 
 NPM_PACKAGES="${HOME}/.npm-packages"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
