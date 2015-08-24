@@ -1,1 +1,1 @@
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+#MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
