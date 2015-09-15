@@ -17,9 +17,8 @@ prepend_path '/usr/sbin'
 prepend_path '/usr/sbin'
 prepend_path '/usr/local/bin'
 prepend_path '/usr/local/sbin'
-prepend_path '~/.rvm/bin'
 prepend_path '~/bin'
-append_path  '~/.rvm/bin'
+prepend_path  '~/.rvm/bin'
 #append_path  '~/.node/bin'
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 
@@ -27,10 +26,10 @@ unset prepend_path
 unset append_path
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/Users/jbutkowski/google-cloud-sdk/path.bash.inc'
+#source '/Users/jbutkowski/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
-source '/Users/jbutkowski/google-cloud-sdk/completion.bash.inc'
+#source '/Users/jbutkowski/google-cloud-sdk/completion.bash.inc'
 
 #NPM_PACKAGES="${HOME}/.npm-packages"
 #NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
