@@ -4,6 +4,7 @@ export USER_PASSWORD="password1!"
 
 # Full domain name for your application. Eg `sales.example.com`.
 #export APP_DOMAIN="lvh.me:3000"
+export HOST="localhost:3000"
 
 # Provided by Stripe. Required.
 export STRIPE_PUBLISHABLE_KEY="pk_test_9131dqrzZ84zeeupk2CbfGVQ"
@@ -24,6 +25,20 @@ export SMTP_SERVER_PORT="465"
 export SMTP_SERVER_USERNAME="jbutkowski@gmail.com"
 export SMTP_SERVER_PASSWORD="xwdtjublultejecs"
 export SMTP_SERVER_DOMAIN="gmail.com"
+
+export MAIL_SENDER_EMAIL_ADDRESS=$SMTP_SERVER_USERNAME
+export MAIL_SENDER_PASSWORD=$SMTP_SERVER_PASSWORD
+export MAIL_SENDER_SERVER_PORT=$SMTP_SERVER_PORT
+export MAIL_SENDER_SERVER_HOST=$SMTP_SERVER_ADDRESS
+export MAIL_SENDER_TLS=false
+export MAIL_SENDER_USERNAME=$SMTP_SERVER_USERNAME
+export MAIL_SYSTEM_ADMIN=$SMTP_SERVER_USERNAME
+
+# Amazaon S3 storage
+export S3_BUCKET_NAME="lmit.tester"
+export S3_KEY="AKIAJXBCWUFBPQIPS3IQ"
+export S3_SECRET="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"
+export S3_REGION="Sydney"
 
 # Sets the 'From' address for error notification emails.
 #export NOTIFIER_FROM_ADDRESS="noreply@example.com"
