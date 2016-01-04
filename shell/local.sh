@@ -10,6 +10,8 @@ export HOST="localhost:3000"
 export STRIPE_PUBLISHABLE_KEY="pk_test_9131dqrzZ84zeeupk2CbfGVQ"
 export STRIPE_SECRET_KEY="sk_test_W7llqJ13NUgwHypibCDwYKvZ"
 
+export LIFX_TOKEN="c222ca482bdd7128740471a720251d039ad2e182a85f5147f9f576159e213d13"
+
 # Sets up a link from the admin sale view page to the corresponding Stripe page.
 #export STRIPE_MANAGE_BASE_URL=""
 
