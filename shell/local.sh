@@ -6,11 +6,15 @@ export USER_PASSWORD="password1!"
 #export APP_DOMAIN="lvh.me:3000"
 export HOST="localhost:3000"
 
+export WORKERS='1'
+
 # Provided by Stripe. Required.
 export STRIPE_PUBLISHABLE_KEY="pk_test_9131dqrzZ84zeeupk2CbfGVQ"
 export STRIPE_SECRET_KEY="sk_test_W7llqJ13NUgwHypibCDwYKvZ"
 
 export LIFX_TOKEN="c222ca482bdd7128740471a720251d039ad2e182a85f5147f9f576159e213d13"
+
+export RUBY_GC_TOKEN="9e18b7578ff1f9ca970e17b18938eca6"
 
 # Sets up a link from the admin sale view page to the corresponding Stripe page.
 #export STRIPE_MANAGE_BASE_URL=""
@@ -41,6 +45,10 @@ export S3_BUCKET_NAME="lmit.tester"
 export S3_KEY="AKIAJXBCWUFBPQIPS3IQ"
 export S3_SECRET="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"
 export S3_REGION="Sydney"
+export AWS_ACCESS_KEY_ID=$S3_KEY
+export AWS_SECRET_ACCESS_KEY=$S3_SECRET
+export S3_BUCKET=$S3_BUCKET_NAME
+export AWS_REGION=$S3_REGION
 
 # Sets the 'From' address for error notification emails.
 #export NOTIFIER_FROM_ADDRESS="noreply@example.com"

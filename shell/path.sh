@@ -1,4 +1,6 @@
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source ~/.profile
+
 
 function prepend_path() {
   if [ -d "$1" ]; then
