@@ -18,9 +18,8 @@ prepend_path '/usr/local/bin'
 prepend_path '/usr/local/sbin'
 prepend_path '~/bin'
 prepend_path  '~/.rvm/bin'
-prepend_path  '/home/jbutkowski/npm-global/bin'
+prepend_path  '~/.node/bin'
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
-append_path '~/Argyll_V1.8.3/bin'
 
 
 unset prepend_path
