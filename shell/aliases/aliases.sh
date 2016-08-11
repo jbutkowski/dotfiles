@@ -13,6 +13,7 @@ alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 alias redot='cd ~/.dotfiles && gpp && rake install; cd -'
 
 alias hosts='sudo vim /etc/hosts'
+alias vhosts='sudo vim /etc/apache2/extra/httpd-vhosts.conf'
 alias vrb='vim -c "setf ruby"'
 
 # http://www.hogbaysoftware.com/products/plaintext
@@ -38,5 +39,4 @@ fi
 # I always forget the common options.
 alias rsync?="echo 'rsync -az --progress server:/path/ path (Slashes are significant.)'"
 
-alias phpmamp='/Applications/MAMP/bin/php/php5.6.2/bin/php'
 
