@@ -13,3 +13,6 @@ shopt -s globstar
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
+
+# Init jenv
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
