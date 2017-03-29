@@ -18,6 +18,7 @@ prepend_path '/usr/bin'
 prepend_path '/usr/sbin'
 prepend_path '/usr/local/bin'
 prepend_path '/usr/local/sbin'
+prepend_path '~/bin/FDK/Tools/osx'
 prepend_path '~/bin'
 prepend_path  '~/.rvm/bin'
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
@@ -30,4 +31,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function
