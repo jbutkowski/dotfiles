@@ -9,7 +9,7 @@ FRESH_LOCAL_SOURCE=jbutkowski/dotfiles bash <(curl -sL get.freshshell.com)
 ``` sh
 cd ~/.dotfiles && brew bundle
 ```
-
+ 
 My dotfiles are managed by [fresh].
 
 [fresh]: http://freshshell.com
