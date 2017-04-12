@@ -3,8 +3,3 @@ if [[ -f ~/.bashrc.local  ]]
 then
    source ~/.bashrc.local
 fi
-
-if [[ -f ~/.profile ]]
-then
-	source ~/.profile
-fi
