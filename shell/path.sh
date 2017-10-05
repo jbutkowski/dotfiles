@@ -26,6 +26,12 @@ prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
 unset prepend_path
 unset append_path
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jbutkowski/Downloads/google-cloud-sdk/path.bash.inc'  ]; then source '/Users/jbutkowski/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jbutkowski/Downloads/google-cloud-sdk/completion.bash.inc'  ]; then source '/Users/jbutkowski/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
