@@ -1,6 +1,3 @@
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-source ~/.profile
-
 function prepend_path() {
   if [ -d "$1" ]; then
     PATH="$1:$PATH"
@@ -14,14 +11,13 @@ function append_path() {
 
 PATH=$(getconf PATH)
 
-prepend_path '/usr/bin'
-prepend_path '/usr/sbin'
-prepend_path '/usr/local/bin'
-prepend_path '/usr/local/sbin'
-prepend_path '~/bin/FDK/Tools/osx'
-prepend_path '~/bin'
-prepend_path  '~/.rvm/bin'
-prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
+prepend_path "/usr/bin"
+prepend_path "/usr/sbin"
+prepend_path "/usr/local/bin"
+prepend_path "/usr/local/sbin"
+prepend_path "$HOME/bin/FDK/Tools/osx"
+prepend_path "$HOME/bin"
+prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
 
 unset prepend_path
 unset append_path
