@@ -21,12 +21,8 @@ prepend_path '/usr/local/sbin'
 prepend_path '~/bin'
 prepend_path  '~/.rvm/bin'
 prepend_path '/usr/local/opt/coreutils/libexec/gnubin'
-
-unset prepend_path
 unset append_path
 
-# NVM
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # RVM
