@@ -19,6 +19,10 @@ prepend_path "$HOME/bin/FDK/Tools/osx"
 prepend_path "$HOME/bin"
 prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
 
+
+prepend_path "/usr/local/opt/icu4c/bin"
+prepend_path "/usr/local/opt/icu4c/sbin"
+
 unset prepend_path
 unset append_path
 
@@ -31,6 +35,8 @@ if [ -f '/Users/jbutkowski/Downloads/google-cloud-sdk/completion.bash.inc'  ]; t
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[[ -r $NVM_DIR/bash_completion  ]] && \. $NVM_DIR/bash_completion
+
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function
