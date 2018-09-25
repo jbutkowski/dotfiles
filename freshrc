@@ -6,6 +6,7 @@ for file in ~/.bash_profile ~/.bashrc; do
 	fresh 'shell/noninteractive.sh' --file=$file
 	fresh 'shell/path.sh' --file=$file
 	fresh 'shell/profile' --file=$file
+	fresh 'shell/tab-completion.sh' --file=$file
 	fresh freshshell/fresh contrib/source-build.sh --file=$file
 done
 
