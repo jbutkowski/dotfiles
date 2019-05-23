@@ -33,8 +33,24 @@ prepend_path "/usr/local/opt/libpq/bin"
 prepend_path "/usr/local/opt/sqlite/bin"
 prepend_path "/usr/local/opt/coreutils/libexec/gnubin"
 
+prepend_path "/usr/local/opt/icu4c/bin"
+prepend_path "/usr/local/opt/icu4c/sbin"
+
+prepend_path "/usr/local/opt/openssl/bin"
+prepend_path "/usr/local/opt/apr-util/bin"
+prepend_path "/usr/local/opt/libiconv/bin"
+prepend_path "/usr/local/opt/libpq/bin"
+prepend_path "/usr/local/opt/sqlite/bin"
+prepend_path "$HOME/.composer/vendor/bin"
+
 unset prepend_path
 unset append_path
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f "$HOME/Downloads/google-cloud-sdk/path.bash.inc"  ]; then source "$HOME/Downloads/google-cloud-sdk/path.bash.inc"; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f "$HOME/Downloads/google-cloud-sdk/completion.bash.inc"  ]; then source "$HOME/Downloads/google-cloud-sdk/completion.bash.inc"; fi
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
