@@ -79,7 +79,7 @@ NeoBundle 'crusoexia/vim-monokai'
 NeoBundle 'zenorocha/dracula-theme'
 
 "" Vim-Bootstrap Updater
-NeoBundle 'sherzberg/vim-bootstrap-updater'
+" NeoBundle 'sherzberg/vim-bootstrap-updater'
 
 "" Custom bundles
 

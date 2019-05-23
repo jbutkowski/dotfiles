@@ -4,9 +4,9 @@ export USER_PASSWORD="password1!"
 
 # Full domain name for your application. Eg `sales.example.com`.
 #export APP_DOMAIN="lvh.me:3000"
-export HOST="localhost:3000"
+#export HOST="localhost:3000"
 
-export WORKERS='1'
+#export WORKERS='1'
 
 # Provided by Stripe. Required.
 export STRIPE_PUBLISHABLE_KEY="pk_test_9131dqrzZ84zeeupk2CbfGVQ"

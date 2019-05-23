@@ -6,6 +6,8 @@ alias l='ls -CF'
 alias c='cucumber -p rerun'
 alias cw='cucumber -p wip'
 alias ri='ri -f ansi'
+alias lc='colorls -lA --sd'
+alias lt='colorls -t'
 
 # Management
 alias dots="cd ~/.dotfiles && vim"
