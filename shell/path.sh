@@ -42,6 +42,7 @@ prepend_path "/usr/local/opt/libiconv/bin"
 prepend_path "/usr/local/opt/libpq/bin"
 prepend_path "/usr/local/opt/sqlite/bin"
 prepend_path "$HOME/.composer/vendor/bin"
+prepend_path "/snap/bin"
 
 unset prepend_path
 unset append_path
