@@ -97,7 +97,11 @@ NeoBundle "ecomba/vim-ruby-refactoring"
 
 
 "" HTML Bundle
+<<<<<<< HEAD
 "NeoBundle 'amirh/HTML-AutoCloseTag'
+=======
+" NeoBundle 'amirh/HTML-AutoCloseTag'
+>>>>>>> 10530988ae8d337840c1ce2d4a561600302eb61e
 NeoBundle 'hail2u/vim-css3-syntax'
 NeoBundle 'gorodinskiy/vim-coloresque'
 NeoBundle 'tpope/vim-haml'
