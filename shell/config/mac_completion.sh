@@ -17,3 +17,4 @@ if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completio
 fi;
 
 [[ -r $NVM_DIR/bash_completion  ]] && . $NVM_DIR/bash_completion
+
