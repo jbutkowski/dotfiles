@@ -23,6 +23,10 @@ install wget --enable-iri
 
 cask install heroku-toolbelt
 
+# Install Powerline Fonts
+tap homebrew/cask-fonts
+cask install font-hack-nerd-font
+
 # Install PHP7
 tap homebrew/homebrew-php
 install php70

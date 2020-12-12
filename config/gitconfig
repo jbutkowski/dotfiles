@@ -8,9 +8,6 @@
   di = diff
   dc = diff --cached
 
-[color]
-  ui = auto
-
 [push]
   default = simple
 

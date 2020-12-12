@@ -24,3 +24,4 @@ _bash_history_sync() {
 }
 
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}_bash_history_sync"
+

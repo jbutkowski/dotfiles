@@ -122,3 +122,4 @@ __powerline() {
 
 __powerline
 unset __powerline
+

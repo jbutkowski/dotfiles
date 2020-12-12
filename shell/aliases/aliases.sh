@@ -44,4 +44,6 @@ fi
 # I always forget the common options.
 alias rsync?="echo 'rsync -az --progress server:/path/ path (Slashes are significant.)'"
 
-
+# Fun stuff
+# Watch Star Wars in Terminal
+alias starwars="telnet towel.blinkenlights.nl"
