@@ -25,7 +25,7 @@ fresh-options
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"
-  fresh 'vim/neobundle.vim'
+  fresh 'vim/vim-plug.vim'
   fresh 'vim/leader.vim'
   fresh 'vim/global.vim'
   fresh 'vim/mappings.vim'

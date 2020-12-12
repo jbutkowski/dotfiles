@@ -43,7 +43,7 @@ prepend_path "/usr/local/opt/libpq/bin"
 prepend_path "/usr/local/opt/sqlite/bin"
 prepend_path "$HOME/.composer/vendor/bin"
 prepend_path "/snap/bin"
-prepend_path "$HOME/.node_modules/bin"
+prepend_path "$HOME/node_modules/.bin"
 
 unset prepend_path
 unset append_path
@@ -58,7 +58,8 @@ unset append_path
 #export NVM_DIR="$HOME/.nvm"
 #[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 #[[ -r $NVM_DIR/bash_completion  ]] && \. $NVM_DIR/bash_completion
-
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function
