@@ -6,12 +6,7 @@ for file in ~/.bash_profile ~/.bashrc; do
   fresh 'shell/noninteractive.sh' --file=$file
   fresh 'shell/exports.sh' --file=$file
   fresh 'shell/path.sh' --file=$file
-<<<<<<< HEAD
-  fresh 'shell/gcloud.sh' --file=$file
   fresh 'shell/nvm.sh' --file=$file
-  fresh 'shell/rvm.sh' --file=$file
-=======
->>>>>>> 10530988ae8d337840c1ce2d4a561600302eb61e
   fresh 'shell/tab_completion.sh' --file=$file
   fresh 'shell/profile' --file=$file
   fresh freshshell/fresh contrib/source-build.sh --file=$file
