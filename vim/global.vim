@@ -14,19 +14,16 @@ set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
-set expandtab
-
-"" Map leader to ,
-let mapleader=','
+set expandtab           " Use spaces instead of tabs
 
 "" Enable hidden buffers
 set hidden
 
 "" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
+set hlsearch            " Highlight search results
+set incsearch           " Makes search act like search in modern browsers
+set ignorecase          " Ignore case when searching
+set smartcase           " When searching try to be smart about cases 
 
 set fileformats=unix,dos,mac
 
