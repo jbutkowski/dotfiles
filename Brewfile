@@ -4,37 +4,22 @@
 # Make sure we're using the latest Homebrew
 update
 
+tap "homebrew/cask"
+
 # Install more recent versions of some OS X tools
-install vim --override-system-vii
+brew "vim", args: ["override-system-vii"]
 
-tap caskroom/cask
-install brew-cask
-
-tap homebrew/dupes
-tap homebrew/versions
-
-# Install Bash 4
+# Install the lastest Bash version
 # Note: don't forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
-install bash
-install bash-completion
+brew "bash"
+brew "bash-completion"
 
 # Install wget with IRI support
-install wget --enable-iri
+brew "wget", args: ["enable-iri"]
 
-cask install heroku-toolbelt
-
-# Install Powerline Fonts
-tap homebrew/cask-fonts
-cask install font-hack-nerd-font
-
-# Install PHP7
-tap homebrew/homebrew-php
-install php70
+# Install Heroku CLI
+tap "heroku/brew"
+brew "heroku"
 
 # Install other useful binaries
-install imagemagick --with-webp
-
-tap gapple/services
-
-# Remove outdated versions from the cellar
-cleanup
+brew "imagemagick", args: ["with-webp"]
