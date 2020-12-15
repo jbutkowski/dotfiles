@@ -23,7 +23,7 @@ set hidden
 set hlsearch            " Highlight search results
 set incsearch           " Makes search act like search in modern browsers
 set ignorecase          " Ignore case when searching
-set smartcase           " When searching try to be smart about cases 
+set smartcase           " When searching try to be smart about cases
 
 set fileformats=unix,dos,mac
 
@@ -70,7 +70,7 @@ else
   let g:indentLine_char = '┆'
   let g:indentLine_faster = 1
 
-  
+
   if $COLORTERM == 'gnome-terminal'
     set term=gnome-256color
   else
@@ -78,7 +78,7 @@ else
       set term=xterm-256color
     endif
   endif
-  
+
 endif
 
 
