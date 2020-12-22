@@ -3,13 +3,13 @@
 fresh freshshell/fresh bin/fresh --bin
 
 for file in ~/.bash_profile ~/.bashrc; do
+  fresh freshshell/fresh contrib/source-build.sh --file=$file
   fresh 'shell/noninteractive.sh' --file=$file
   fresh 'shell/exports.sh' --file=$file
   fresh 'shell/path.sh' --file=$file
   fresh 'shell/nvm.sh' --file=$file
   fresh 'shell/tab_completion.sh' --file=$file
   fresh 'shell/profile' --file=$file
-  fresh freshshell/fresh contrib/source-build.sh --file=$file
 done
 
 fresh 'bin/*' --bin
