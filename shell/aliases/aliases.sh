@@ -35,11 +35,11 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 # Portable ls with colors
-if ls --color -d . >/dev/null 2>&1; then
-  alias ls='ls --color=auto'  # Linux
-elif ls -G -d . >/dev/null 2>&1; then
-  alias ls='ls -G'  # BSD/OS X
-fi
+# if ls --color -d . >/dev/null 2>&1; then
+#   alias ls='ls --color=auto'  # Linux
+# elif ls -G -d . >/dev/null 2>&1; then
+#   alias ls='ls -G'  # BSD/OS X
+# fi
 
 # I always forget the common options.
 alias rsync?="echo 'rsync -az --progress server:/path/ path (Slashes are significant.)'"

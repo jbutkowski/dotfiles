@@ -18,12 +18,14 @@ fresh 'bin/*' --bin
 fresh 'shell/noninteractive.sh'
 fresh 'shell/aliases/*'
 fresh 'shell/config/*'
+fresh 'shell/prompt/prompt.sh'
 
 # Config
 fresh-options --file
   fresh 'config/*'
   fresh garybernhardt/dotfiles .githelpers
 fresh-options
+fresh shell/colorls --file=~/.config/colorls/
 
 # Vim
 fresh-options --file=~/.vimrc --marker=\"

@@ -10,7 +10,7 @@ __powerline() {
     readonly FG_MAGENTA="\[$(tput setaf 5)\]"
     readonly FG_CYAN="\[$(tput setaf 6)\]"
     readonly FG_WHITE="\[$(tput setaf 7)\]"
-    
+
     readonly BG_BLACK="\[$(tput setab 0)\]"
     readonly BG_RED="\[$(tput setab 1)\]"
     readonly BG_GREEN="\[$(tput setab 2)\]"
@@ -42,7 +42,7 @@ __powerline() {
     readonly SYSTEM_PROMPT_SYMBOL_AT='@'
     readonly SYSTEM_PROMPT_SYMBOL_USER='➜'
 
-    __git_info() { 
+    __git_info() {
         [ -x "$(which git)" ] || return    # git not found
 
         # get current branch name or short SHA1 hash for detached head
@@ -98,6 +98,14 @@ __powerline() {
         printf "${GIT_PROMPT_SYMBOL}"
     }
 
+    function success_indicator() {
+        if [ $? -eq 0 ] ; then
+            echo "😎"
+        else
+            echo "💩"
+        fi
+    }
+
     ps1() {
         local RETVAL=$?
         local PROMPT_SYMBOL_DATE="${FG_MAGENTA}"`date "+%Y-%m-%d %H:%M:%S %A"`"$RESET"
@@ -122,4 +130,3 @@ __powerline() {
 
 __powerline
 unset __powerline
-
