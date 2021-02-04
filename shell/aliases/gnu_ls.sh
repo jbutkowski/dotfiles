@@ -7,7 +7,7 @@ if colorls > /dev/null 2>&1; then
   alias ls='colorls --dark'
   alias la='colorls --all --dark'
   alias ll='colorls --all --long --dark'
-  alias lsgit='colorls --all --gs --dark ./ -t'
+  alias lsgit='colorls --gs --tree --dark'
   alias lsr='colorls --report --dark'
 else
   if ls --color > /dev/null 2>&1; then # GNU `ls`
