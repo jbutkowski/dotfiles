@@ -21,6 +21,7 @@ prepend_path "/usr/bin"
 prepend_path "/usr/sbin"
 prepend_path "/usr/local/bin"
 prepend_path "/usr/local/sbin"
+prepend_path "$HOME/.local/bin"
 
 prepend_path "/usr/local/opt/icu4c/bin"
 prepend_path "/usr/local/opt/icu4c/sbin"
