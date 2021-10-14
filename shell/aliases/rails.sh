@@ -4,6 +4,8 @@ alias rails='$([ -S .zeus.sock ] && echo zeus || echo rails_command)'
 alias rs='rails server'
 alias rg='rails generate'
 alias rgm='rg migration'
+alias cuke="webpack --cucumber && bundle exec cucumber"
+
 
 zeus() {
   command zeus "$@"
