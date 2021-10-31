@@ -106,7 +106,7 @@ else
   noremap <C-Insert> "+y
 
   " CTRL-V and SHIFT-Insert are Paste
-  map <C-V> "+gP
+  map <C-p> "+gP
   map <S-Insert> "+gP
 endif
 
