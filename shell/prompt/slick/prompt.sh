@@ -26,21 +26,25 @@ __powerline() {
     readonly BOLD="\[$(tput bold)\]"
 
     # Unicode symbols
-    readonly GIT_PROMPT_SYMBOL_BRANCH='➦'
+    # readonly GIT_PROMPT_SYMBOL_BRANCH='➦'
+    readonly GIT_PROMPT_SYMBOL_BRANCH=' '
     readonly GIT_PROMPT_SYMBOL_ADD="${FG_WHITE}Ⓐ ${RESET}"
     readonly GIT_PROMPT_SYMBOL_DELETE="${FG_RED}Ⓓ ${RESET}"
     readonly GIT_PROMPT_SYMBOL_MODIFY="${FG_MAGENTA}Ⓜ ${RESET}"
     readonly GIT_PROMPT_SYMBOL_RENAME="${FG_CYAN}Ⓡ ${RESET}"
     readonly GIT_PROMPT_SYMBOL_COMMIT="${FG_YELLOW}Ⓒ ${RESET}"
-    readonly GIT_PROMPT_SYMBOL_PUSH="⬆"
-    readonly GIT_PROMPT_SYMBOL_PULL="⬇"
+    # readonly GIT_PROMPT_SYMBOL_PUSH="⬆"
+    readonly GIT_PROMPT_SYMBOL_PUSH=""
+    # readonly GIT_PROMPT_SYMBOL_PULL="⬇"
+    readonly GIT_PROMPT_SYMBOL_PULL=""
 
     readonly SYSTEM_PROMPT_SYMBOL_TRUE='✔'
     readonly SYSTEM_PROMPT_SYMBOL_FALSE='✘'
     readonly SYSTEM_PROMPT_SYMBOL_JOBS='⚙'
     readonly SYSTEM_PROMPT_SYMBOL_ROOT='⚡'
     readonly SYSTEM_PROMPT_SYMBOL_AT='@'
-    readonly SYSTEM_PROMPT_SYMBOL_USER='➜'
+    # readonly SYSTEM_PROMPT_SYMBOL_USER='➜'
+    readonly SYSTEM_PROMPT_SYMBOL_USER=''
 
     __git_info() {
         [ -x "$(which git)" ] || return    # git not found
@@ -91,9 +95,11 @@ __powerline() {
         fi
 
         if [ -n "${STATUS}" ]; then
-            GIT_PROMPT_SYMBOL="${FG_YELLOW}git ${GIT_PROMPT_SYMBOL_BRANCH} (${BRANCH} ${RESET}${STATUS}${FG_YELLOW})${RESET} "
+            # GIT_PROMPT_SYMBOL="${FG_YELLOW}git ${GIT_PROMPT_SYMBOL_BRANCH} (${BRANCH} ${RESET}${STATUS}${FG_YELLOW})${RESET} "
+            GIT_PROMPT_SYMBOL="${FG_YELLOW}${GIT_PROMPT_SYMBOL_BRANCH}(${BRANCH} ${RESET}${STATUS}${FG_YELLOW})${RESET} "
         else
-            GIT_PROMPT_SYMBOL="${FG_GREEN}git ${GIT_PROMPT_SYMBOL_BRANCH} (${BRANCH}) ${RESET}"
+            # GIT_PROMPT_SYMBOL="${FG_GREEN}git ${GIT_PROMPT_SYMBOL_BRANCH} (${BRANCH}) ${RESET}"
+            GIT_PROMPT_SYMBOL="${FG_GREEN}${GIT_PROMPT_SYMBOL_BRANCH}(${BRANCH}) ${RESET}"
         fi
         printf "${GIT_PROMPT_SYMBOL}"
     }
@@ -108,8 +114,10 @@ __powerline() {
 
     ps1() {
         local RETVAL=$?
-        local PROMPT_SYMBOL_DATE="${FG_MAGENTA}"`date "+%Y-%m-%d %H:%M:%S %A"`"$RESET"
-        local PROMPT_SYMBOL_DIR="${FG_BLUE}\w$RESET"
+        # local PROMPT_SYMBOL_DATE="${FG_MAGENTA}"`date "+%d-%m-%Y %H:%M:%S %A"`"$RESET"
+        # local PROMPT_SYMBOL_DATE="${FG_MAGENTA}"`date "+%A, %d %b %Y %H:%M:%S"`"$RESET"
+        local PROMPT_SYMBOL_DATE="${FG_MAGENTA}"`date "+%d %b %Y %H:%M:%S"`"$RESET"
+        local PROMPT_SYMBOL_DIR="${FG_BLUE}  \w$RESET"
         local PROMPT_USER_HOST_COLOR="${FG_GREEN}"
         local PROMPT_USER_HOST="\u${SYSTEM_PROMPT_SYMBOL_AT}\h"
         if [ $UID -eq 0 ]; then
