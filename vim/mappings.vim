@@ -26,6 +26,14 @@ nnoremap <leader>sc :CloseSession<CR>
 nnoremap <Tab> gt
 nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
+nnoremap <silent> <A-Left> :tabm -1<CR>
+nnoremap <silent> <A-Right> :tabm +1<CR>
+map <C-Down> :tabc<CR>
+
+"" Buffers
+nnoremap <C-Left> :bprev<CR>
+nnoremap <C-Right> :bnext<CR>
+nnoremap <S-Down> :bd<CR>
 
 "" Set working directory
 nnoremap <leader>. :lcd %:p:h<CR>
