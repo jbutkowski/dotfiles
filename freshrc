@@ -8,9 +8,8 @@ for file in ~/.bash_profile ~/.bashrc; do
   fresh 'shell/exports.sh' --file=$file
   fresh 'shell/path.sh' --file=$file
   fresh 'shell/nvm.sh' --file=$file
-  fresh 'shell/tab_completion.sh' --file=$file
   fresh 'shell/prompt/prompt.sh' --file=$file
-  fresh 'shell/profile' --file=$file
+  fresh 'shell/profile.sh' --file=$file
 done
 
 fresh 'bin/*' --bin
@@ -23,7 +22,6 @@ fresh 'shell/config/*'
 # Config
 fresh-options --file
   fresh 'config/*'
-  fresh garybernhardt/dotfiles .githelpers
 fresh-options
 fresh shell/colorls --file=~/.config/colorls/
 
@@ -41,9 +39,6 @@ fresh vim/colors --file=~/.vim/colors/
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf
 fresh Lokaltog/powerline font/10-powerline-symbols.conf --file=~/.config/fontconfig/conf.d/10-powerline-symbols.conf
 
-# Other config
-fresh bltavares/dot-files ctags --file=~/.ctags
-fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
 
 # Gitignore
 fresh-options --file=~/.gitignore --marker=#

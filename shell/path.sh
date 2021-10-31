@@ -12,7 +12,6 @@ function append_path() {
 PATH=$(getconf PATH)
 
 prepend_path "$HOME/bin"
-prepend_path "$HOME/.rvm/bin"
 prepend_path "$HOME/.pyenv/bin"
 prepend_path "$HOME/bin/FDK/Tools/osx"
 prepend_path "$HOME/.composer/vendor/bin"
@@ -40,6 +39,7 @@ prepend_path "/usr/local/opt/libpq/bin"
 prepend_path "/usr/local/opt/sqlite/bin"
 prepend_path "$HOME/.composer/vendor/bin"
 prepend_path "/snap/bin"
+prepend_path "$HOME/.rvm/bin"
 
 unset prepend_path
 unset append_path

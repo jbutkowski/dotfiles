@@ -1,7 +1,3 @@
-#if ls --color -d . >/dev/null 2>&1; then
-#  alias ls='ls --color=auto'
-#fi
-
 # Detect which `ls` flavor is in use
 if colorls > /dev/null 2>&1; then
   alias ls='colorls --dark'

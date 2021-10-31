@@ -3,3 +3,5 @@ export PKG_CONFIG_PATH=/usr/local/opt/ncurses/lib/pkgconfig:$PKG_CONFIG_PATH
 #export PKG_CONFIG_PATH=/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH
 export PKG_CONFIG_PATH=/usr/local/opt/imagemagick@6/lib/pkgconfig:$PKG_CONFIG_PATH
 #export PKG_CONFIG_PATH=/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH
+export GOPATH=$(go env GOPATH)
+export GOBIN=$(go env GOPATH)/bin
