@@ -4,10 +4,10 @@ fresh freshshell/fresh bin/fresh --bin
 
 for file in ~/.bash_profile ~/.bashrc; do
   fresh freshshell/fresh contrib/source-build.sh --file=$file
-  fresh 'shell/noninteractive.sh' --file=$file
+  #fresh 'shell/noninteractive.sh' --file=$file
   fresh 'shell/exports.sh' --file=$file
-  fresh 'shell/path.sh' --file=$file
   fresh 'shell/nvm.sh' --file=$file
+  fresh 'shell/path.sh' --file=$file
   fresh 'shell/prompt/slick/prompt.sh' --file=$file
   fresh 'shell/profile.sh' --file=$file
 done
