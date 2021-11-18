@@ -4,6 +4,6 @@ then
    source ~/.bashrc.local
 fi
 
-if command -v direnv > /dev/null; then
-  eval "$(direnv hook bash)"
-fi
+#if command -v direnv > /dev/null; then
+#  eval "$(direnv hook bash)"
+#fi

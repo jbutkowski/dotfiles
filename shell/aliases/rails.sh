@@ -22,3 +22,6 @@ function mysql {
   fi
   command mysql "$@"
 }
+
+# set file and folder permissions in you rails app
+alias set-rails-perms="find . -type d -exec chmod -v 0775 {} \; && find . -type f -exec chmod -v 0664 {} \; && find . -type d -name 'bin' -exec chmod -v 0755 {} \; && find ./**/bin -type f -exec chmod -v 0755 {} \; && find . -type f -name master.key -exec chmod -v 0600 {} \;"

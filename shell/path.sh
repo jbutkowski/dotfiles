@@ -39,8 +39,10 @@ prepend_path "$HOME/.local/bin"
 # prepend_path "/usr/local/opt/sqlite/bin"
 # prepend_path "$HOME/.composer/vendor/bin"
 prepend_path "/snap/bin"
-prepend_path "$HOME/npm-global/bin"
 prepend_path "$HOME/.rvm/bin"
+# prepend_path "/media/storage/rvm/bin"
+prepend_path "$GEM_HOME/bin"
+prepend_path "$HOME/npm-global/bin"
 
 unset prepend_path
 unset append_path
@@ -48,5 +50,15 @@ unset append_path
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# export GEM_HOME="$HOME/.rvm/gems/ruby-3.0.2"
+# export GEM_PATH="$HOME/.rvm/gems/ruby-3.0.2:$HOME/.rvm/gems/ruby-3.0.2@global"
+
+# if [ -s "$HOME/.rvmrc" ]; then
+#     source "$HOME/.rvmrc"
+# fi # to have $rvm_path defined if set
+# if [ -s "${rvm_path-$HOME/.rvm}/scripts/rvm" ]; then
+#     source "${rvm_path-$HOME/.rvm}/scripts/rvm"
+# fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
