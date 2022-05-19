@@ -3,6 +3,7 @@
 "*****************************************************************************
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme='dracula'
 
 " vim-airline
 if !exists('g:airline_symbols')
@@ -39,3 +40,12 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+
+"let g:airline_theme = 'powerlineish'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_skip_empty_sections = 1
+"let g:airline#extensions#syntastic#enabled = 1

@@ -1,16 +1,16 @@
 alias vundle='vim +BundleInstall +qall'
 alias apt='sudo aptitude'
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias lc='colorls -lA --sd'
-alias lt='colorls -t'
+# alias ll='ls -alF'
+# alias la='ls -A'
+# alias l='ls -CF'
+# alias lc='colorls -lA --sd'
+# alias lt='colorls -t'
 
 alias c='cucumber -p rerun'
 alias cw='cucumber -p wip'
 alias ri='ri -f ansi'
-alias lc='colorls -lA --sd'
-alias lt='colorls -t'
+# alias lc='colorls -lA --sd'
+# alias lt='colorls -t'
 
 # Management
 alias dots="cd ~/.dotfiles && vim"
@@ -25,7 +25,7 @@ alias vrb='vim -c "setf ruby"'
 alias text='cd ~/Dropbox/PlainText && vim'
 
 # Shell
-alias la='ls -alh'
+# alias la='ls -alh'
 alias cdd='cd -'  # back to last directory
 alias pg='ps aux | head -n1; ps aux | grep -i'
 alias tf='tail -F -n200'
@@ -47,3 +47,4 @@ alias rsync?="echo 'rsync -az --progress server:/path/ path (Slashes are signifi
 # Fun stuff
 # Watch Star Wars in Terminal
 alias starwars="telnet towel.blinkenlights.nl"
+

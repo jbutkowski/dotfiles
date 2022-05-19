@@ -9,6 +9,7 @@ for file in ~/.bash_profile ~/.bashrc; do
   fresh 'shell/path.sh' --file=$file
   fresh 'shell/nvm.sh' --file=$file
   fresh 'shell/tab_completion.sh' --file=$file
+  fresh 'shell/prompt/prompt.sh' --file=$file
   fresh 'shell/profile' --file=$file
 done
 
@@ -18,7 +19,6 @@ fresh 'bin/*' --bin
 fresh 'shell/noninteractive.sh'
 fresh 'shell/aliases/*'
 fresh 'shell/config/*'
-fresh 'shell/prompt/prompt.sh'
 
 # Config
 fresh-options --file
@@ -35,7 +35,7 @@ fresh-options --file=~/.vimrc --marker=\"
   fresh 'vim/mappings.vim'
   fresh 'vim/config/*.vim'
 fresh-options
-fresh vim/colors --file=~/.vim/colors/
+#fresh vim/colors --file=~/.vim/colors/
 
 # Fonts
 fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymbols.otf

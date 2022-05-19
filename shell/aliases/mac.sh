@@ -1,4 +1,7 @@
 
+# Pretty output for 'stat'
+alias stat="stat -x"
+
 # Disable Spotlight
 alias spotoff="sudo mdutil -a -i off"
 # Enable Spotlight
