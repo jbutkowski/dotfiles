@@ -42,14 +42,14 @@ fresh Lokaltog/powerline font/PowerlineSymbols.otf --file=~/.fonts/PowerlineSymb
 fresh Lokaltog/powerline font/10-powerline-symbols.conf --file=~/.config/fontconfig/conf.d/10-powerline-symbols.conf
 
 # Other config
-fresh bltavares/dot-files ctags --file=~/.ctags
-fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
+#fresh bltavares/dot-files ctags --file=~/.ctags
+#fresh carlosantoniodasilva/dotfiles ackrc --file=~/.ackrc
 
 # Gitignore
-fresh-options --file=~/.gitignore --marker=#
-  fresh github/gitignore Global/Vim.gitignore
-  fresh github/gitignore Global/Tags.gitignore
-fresh-options
+#fresh-options --file=~/.gitignore --marker=#
+#  fresh github/gitignore Global/Vim.gitignore
+#  fresh github/gitignore Global/Tags.gitignore
+#fresh-options
 
 if [ ! -e ~/.gitconfig.local ]; then
     echo "Configuring local Git settings:"
@@ -60,4 +60,4 @@ if [ ! -e ~/.gitconfig.local ]; then
     echo "Configured git settings in ~/.gitconfig.local. Not stored in local .dotfiles repo."
 fi
 
-ln -sf ~/.gitignore ~/.agignore
+#ln -sf ~/.gitignore ~/.agignore
